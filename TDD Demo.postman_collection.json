@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "bdc07f3e-aa9c-4962-9929-f969bd6184ad",
+		"name": "TDD Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Greeting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/greeting?name=Yash",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"greeting"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Yash"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DayOfWeek",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					},
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "2015-03-10"
+				},
+				"url": {
+					"raw": "http://localhost:8080/birthday/dayOfWeek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"birthday",
+						"dayOfWeek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ChineseZodiac",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					},
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "2005-03-09"
+				},
+				"url": {
+					"raw": "http://localhost:8080/birthday/chineseZodiac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"birthday",
+						"chineseZodiac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StarSign",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					},
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "2005-03-09"
+				},
+				"url": {
+					"raw": "http://localhost:8080/birthday/starSign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"birthday",
+						"starSign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mortage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mortage?principal=1000&duration=15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mortage"
+					],
+					"query": [
+						{
+							"key": "principal",
+							"value": "1000"
+						},
+						{
+							"key": "duration",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
